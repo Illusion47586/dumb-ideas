@@ -22,7 +22,7 @@ type Props = {};
 const BusyPage = (props: Props) => {
   const ref = useRef<HTMLDivElement>(null);
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [value, setValue, remove] = useLocalStorage("show_busy_dialog", "true");
+  const [value, setValue] = useLocalStorage("show_busy_dialog", "true");
   const [sessionValue, setSessionValue] = useSessionStorage(
     "show_busy_dialog",
     "true"
@@ -101,7 +101,7 @@ const BusyPage = (props: Props) => {
               Close
             </Button>
             <Button variant="ghost" onClick={neverShowAgain}>
-              Don't show this again.
+              Don&apos;t show this again.
             </Button>
           </ModalFooter>
         </ModalContent>
