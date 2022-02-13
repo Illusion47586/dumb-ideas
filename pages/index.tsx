@@ -14,10 +14,14 @@ import {
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import NextLink from "next/link";
+import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
     <Container padding="10" centerContent>
+      <Head>
+        <title>Dumb Ideas</title>
+      </Head>
       <VStack spacing="5" textAlign="center">
         <Heading>Welcome to Dumb Ideas!</Heading>
         <Text>
