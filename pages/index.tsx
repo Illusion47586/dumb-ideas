@@ -58,6 +58,17 @@ const Home: NextPage = () => {
                 </NextLink>
               </Td>
             </Tr>
+            <Tr>
+              <Td>Nothing</Td>
+              <Td>This page does nothing</Td>
+              <Td>
+                <NextLink href="/nothing" passHref>
+                  <Button colorScheme="teal" size="sm">
+                    Link
+                  </Button>
+                </NextLink>
+              </Td>
+            </Tr>
           </Tbody>
         </Table>
       </VStack>
